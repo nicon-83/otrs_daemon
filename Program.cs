@@ -91,7 +91,7 @@ namespace OTRS_Demon
 
                 if (newCounter > 0 || openCounter > 0)
                 {
-                    ClearOtrsCache("otrs", "192.168.0.226", "otrs.Console.pl Maint::Cache::Delete", logPath);
+                    ClearOtrsCache("otrs", "hidden", "otrs.Console.pl Maint::Cache::Delete", logPath);
                 }
 
                 WriteToLog(logPath, DateTime.Now + " Завершение работы скрипта");
